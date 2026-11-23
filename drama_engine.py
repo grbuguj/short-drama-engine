@@ -58,6 +58,8 @@ def episode_context(path):
 def asset(root, shot, folder, extension):
     key = {"videos": "video", "frames": "first_frame"}.get(folder)
     value = shot.get(key, f"{folder}/{shot['id']}.{extension}")
+    if value is None and folder == "frames":
+        return None
     return (root / value).resolve()
 
 
@@ -68,9 +70,10 @@ def audio_path(root, shot, index, line):
 def plan(root, data):
     lines = [f"# {data.get('title', data.get('slug', 'Drama'))}", "", "첫 프레임은 해당 장면의 시작 구도입니다. 이미지 안에 자막이나 읽어야 할 글씨를 생성하지 않습니다.", ""]
     for shot in data["shots"]:
+        frame = asset(root, shot, "frames", "png")
         lines += [
             f"## {shot['id']} · {shot.get('kind', 'scene')}",
-            f"- 첫 프레임: `{asset(root, shot, 'frames', 'png').relative_to(root)}`",
+            f"- 첫 프레임: " + (f"`{frame.relative_to(root)}`" if frame else "별도 이미지 없음, 인물 레퍼런스와 프롬프트 사용"),
             f"- Grok 영상: `{asset(root, shot, 'videos', 'mp4').relative_to(root)}`",
             f"- 장면: {shot.get('prompt', '').strip()}",
             "- 대사: " + (" / ".join(f"{x['actor']}: {x['text']}" for x in shot.get("lines", [])) or "(무대사)"),
