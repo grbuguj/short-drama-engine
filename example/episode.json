@@ -1,0 +1,68 @@
+{
+  "slug": "wedding-father",
+  "title": "결혼식장에서 아버지를 하객이라 부른 딸",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "actors": {
+    "daughter": {"voice_id": "TYPECAST_DAUGHTER_VOICE_ID"},
+    "father": {"voice_id": "TYPECAST_FATHER_VOICE_ID"},
+    "mother_in_law": {"voice_id": "TYPECAST_MOTHER_VOICE_ID"},
+    "groom": {"voice_id": "TYPECAST_GROOM_VOICE_ID"}
+  },
+  "music_db": -23,
+  "scene_audio_db": -100,
+  "shots": [
+    {
+      "id": "S01",
+      "kind": "hook",
+      "prompt": "같은 예식장 로비. 딸이 카메라 밖 아버지를 보며 관계를 부정한다. 딸 가슴 위 클로즈업, 표정은 당황에서 냉정으로. 배경 하객의 시선. 세로 9:16, 6초, 화면 글씨와 자막 없음.",
+      "pause_after": 0.25,
+      "lines": [{"actor": "daughter", "text": "아버지가 아니라, 저희 쪽 하객이에요."}]
+    },
+    {
+      "id": "S02",
+      "kind": "reaction",
+      "prompt": "동일한 60대 아버지, 남색 작업복과 낡은 검은 구두. 딸의 말을 듣고 표정이 멈춘다. 손의 종이봉투를 쥐는 클로즈업. 예식장 조명과 의상 연속성. 세로 9:16, 6초, 대사와 화면 글씨 없음.",
+      "hold_sec": 2.2,
+      "lines": []
+    },
+    {
+      "id": "S03",
+      "kind": "conflict",
+      "prompt": "동일한 예식장 혼주석. 신랑 어머니가 아버지에게 자리를 비키라고 말한다. 신랑 어머니와 아버지의 어깨 너머 투샷, 딸은 뒤에서 시선을 피한다. 세로 9:16, 6초, 자막 없음.",
+      "pause_after": 0.35,
+      "lines": [{"actor": "mother_in_law", "text": "오늘 같은 날, 사진에는 안 나오시는 게 좋겠어요."}]
+    },
+    {
+      "id": "S04",
+      "kind": "response",
+      "prompt": "같은 60대 아버지가 예식장 혼주석 앞에 서 있다. 상처받았지만 억누른 표정, 가슴 위 클로즈업. 세로 9:16, 6초, 화면 글씨 없음.",
+      "lines": [{"actor": "father", "text": "잠깐만 앉았다 가겠습니다."}]
+    },
+    {
+      "id": "S05",
+      "kind": "evidence",
+      "prompt": "예식장 직원이 아버지에게 계약자 이름이 적힌 서류를 건넨다. 읽을 수 없는 가짜 글자 생성 금지. 종이와 주변 인물의 반응에 초점. 같은 의상과 조명. 세로 9:16, 6초.",
+      "pause_before": 0.4,
+      "pause_after": 0.7,
+      "lines": [{"actor": "groom", "text": "예식장 비용을 아버님이 내셨어요?"}]
+    },
+    {
+      "id": "S06",
+      "kind": "reversal",
+      "prompt": "같은 아버지 가슴 위 클로즈업. 조용하지만 흔들리지 않는 표정으로 딸에게 답한다. 카메라가 아주 천천히 다가간다. 세로 9:16, 6초, 화면 글씨 없음.",
+      "pause_after": 0.6,
+      "lines": [{"actor": "father", "text": "돈 얘기를 하려고 온 게 아니다."}]
+    },
+    {
+      "id": "S07",
+      "kind": "choice",
+      "prompt": "딸이 아버지의 팔을 잡으려 하지만 아버지가 손을 빼고 돌아선다. 손과 표정의 연속성, 동일한 예식장과 의상. 과장된 울음 없이 조용한 결별. 세로 9:16, 6초.",
+      "pause_before": 0.2,
+      "pause_after": 1.0,
+      "lines": [{"actor": "father", "text": "사진 속에서는 내 딸인데, 여기서는 내가 남이구나."}]
+    }
+  ]
+}
+
