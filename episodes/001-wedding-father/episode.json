@@ -1,0 +1,43 @@
+{
+  "slug": "001-wedding-father",
+  "title": "결혼식장에서 아버지를 하객이라고 부른 딸",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "scene_audio_db": -100,
+  "actors": {
+    "daughter": {"voice_id": "TYPECAST_DAUGHTER_VOICE_ID"},
+    "father": {"voice_id": "TYPECAST_FATHER_VOICE_ID"},
+    "mother_in_law": {"voice_id": "TYPECAST_MOTHER_VOICE_ID"},
+    "groom": {"voice_id": "TYPECAST_GROOM_VOICE_ID"},
+    "staff": {"voice_id": "TYPECAST_STAFF_VOICE_ID"}
+  },
+  "shots": [
+    {"id":"S01","kind":"hook","first_frame":"frames/S01.png","prompt":"같은 한국식 예식장 로비. 신부가 작업복 차림 아버지를 향해 시선을 피하며 관계를 부정한다. 신부 가슴 위 클로즈업, 아버지 어깨만 전경. 따뜻한 꽃장식과 하객. 세로 9:16, 6초, 자막·글씨 없음.","pause_after":0.3,"lines":[{"actor":"daughter","text":"아버지가 아니라... 저희 쪽 하객이에요."}]},
+    {"id":"S02","kind":"reaction","first_frame":"frames/S02.png","prompt":"동일한 60대 아버지, 남색 배송 작업복과 검정 양복 가방. 딸의 말을 듣고 미소가 사라지고 가방 손잡이를 쥔다. 가슴 위 클로즈업. 같은 예식장. 세로 9:16, 6초, 무대사.","hold_sec":2.4,"lines":[]},
+    {"id":"S03","kind":"insult","first_frame":"frames/S03.png","prompt":"동일한 신랑 어머니, 연회색 한복. 예의 바른 미소로 아버지를 혼주석에서 물러나게 한다. 아버지 어깨 너머 미디엄 클로즈업, 신부는 뒤에서 흐릿하게 시선을 피한다. 세로 9:16, 6초, 글씨 없음.","pause_after":0.2,"lines":[{"actor":"mother_in_law","text":"아, 하객분이시구나. 그런데 이쪽은 혼주석인데요."}]},
+    {"id":"S04","kind":"father","first_frame":null,"prompt":"동일한 아버지가 양복 가방을 가리키며 조용히 설명한다. 작업복과 검정 의류 가방 유지, 같은 혼주석 꽃장식, 가슴 위 미디엄. 세로 9:16, 6초.","lines":[{"actor":"father","text":"잠깐만 앉았다가 옷을 갈아입으려고 했습니다. 새벽 일이 늦게 끝나서요."}]},
+    {"id":"S05","kind":"insult-rise","first_frame":null,"prompt":"동일한 연회색 한복 어머니가 아버지 옷을 위아래로 훑어보고 사진 촬영 쪽을 손짓한다. 주변 하객 시선. 예식장 배치와 인물 유지, 9:16, 6초.","lines":[{"actor":"mother_in_law","text":"사진 촬영도 곧 시작해서요. 오늘 같은 날 작업복으로 나오시면 좀 곤란하겠네요."}]},
+    {"id":"S06","kind":"slip","first_frame":null,"prompt":"동일한 신부가 남들 눈치를 보며 아버지에게 가까이 다가온다. 신부 클로즈업, 불안한 표정, 아버지 작업복 어깨가 전경. 9:16, 6초.","pause_after":0.3,"lines":[{"actor":"daughter","text":"아빠... 아니, 아저씨. 옷부터 갈아입고 오시면 안 돼요?"}]},
+    {"id":"S07","kind":"question","first_frame":"frames/S07.png","prompt":"동일한 신랑 검은 턱시도. 신부가 아빠라고 부른 것을 듣고 신부와 작업복 남자를 번갈아 바라본다. 신랑 가슴 위 클로즈업, 같은 예식장. 9:16, 6초.","lines":[{"actor":"groom","text":"잠깐. 방금 아빠라고 했어? 당신 아버님이신 거야?"}]},
+    {"id":"S08","kind":"evasion","first_frame":null,"prompt":"동일한 신부가 신랑의 눈을 피하고 멀리 사진 촬영 구역을 가리킨다. 짧은 회피 표정, 턱시도 신랑과 투샷. 9:16, 6초.","lines":[{"actor":"daughter","text":"나중에 얘기해. 지금 사진 찍어야 해. 제발 여기서는 묻지 마."}]},
+    {"id":"S09","kind":"staff-arrives","first_frame":"frames/S09.png","prompt":"검은 정장의 예식장 직원이 계약서 파일을 동일한 남색 작업복 아버지에게 건넨다. 뒤에 신부, 신랑, 연회색 한복 어머니가 놀라 바라본다. 종이에는 읽히는 글씨 생성 금지. 9:16, 6초.","pause_before":0.3,"lines":[{"actor":"staff","text":"계약자분, 여기 계셨군요. 잔금 영수증을 찾고 있었습니다."}]},
+    {"id":"S10","kind":"deny","first_frame":null,"prompt":"연회색 한복 어머니가 직원의 말을 믿지 못해 계약서와 아버지를 번갈아 본다. 같은 인물, 같은 예식장, 클로즈업. 9:16, 6초.","lines":[{"actor":"mother_in_law","text":"계약자요? 이분이요? 다른 하객분이랑 착각하신 거 아니에요?"}]},
+    {"id":"S11","kind":"first-reveal","first_frame":null,"prompt":"직원의 손가락이 계약서의 빈 이름 칸을 짚는다. 그 너머로 아버지와 세 사람 반응. 글자는 후편집에서 넣으므로 화면에는 가짜 글씨 없음. 9:16, 6초.","pause_after":0.7,"lines":[{"actor":"staff","text":"아니요. 오늘 예식 비용을 결제하신 분이 맞습니다. 계약자 성함도 확인했습니다."}]},
+    {"id":"S12","kind":"groom-shift","first_frame":null,"prompt":"동일한 신랑이 충격을 받고 아버지에게 몸을 돌려 공손하게 묻는다. 신부는 뒤에서 굳어 있다. 검은 턱시도, 9:16, 6초.","lines":[{"actor":"groom","text":"아버님... 맞으시죠? 제가 몰라뵀습니다."}]},
+    {"id":"S13","kind":"daughter-defends","first_frame":null,"prompt":"동일한 신부가 아버지를 보지 않고 주변 하객을 살피며 날카롭게 말한다. 신부 클로즈업. 9:16, 6초.","lines":[{"actor":"daughter","text":"그걸 왜 지금 여기서 얘기하세요? 제가 나중에 설명하려고 했는데. 다들 보고 있잖아요."}]},
+    {"id":"S14","kind":"father-meaning","first_frame":null,"prompt":"동일한 아버지가 계약서보다 신부를 바라본다. 상처받았지만 차분한 얼굴, 검정 양복 가방을 쥐고 있다. 9:16, 6초.","lines":[{"actor":"father","text":"돈 얘기하려고 온 거 아니야. 네 결혼식 보러 왔지. 그게 그렇게 창피하니?"}]},
+    {"id":"S15","kind":"quick-apology","first_frame":null,"prompt":"연회색 한복 어머니가 주변 시선을 의식하며 태도를 급하게 바꾼다. 혼주석을 가리키는 손짓, 부자연스러운 화해 시도. 9:16, 6초.","lines":[{"actor":"mother_in_law","text":"제가 모르고 실례를 했네요. 얼른 혼주석으로 가시죠. 옷도 갈아입으시고요."}]},
+    {"id":"S16","kind":"father-rebuke","first_frame":null,"prompt":"동일한 아버지가 어머니를 보고 가만히 한마디 한다. 고함 없이 단호한 표정. 가슴 위 클로즈업, 9:16, 6초.","pause_after":0.5,"lines":[{"actor":"father","text":"아까는 사진에 나오면 안 된다면서요. 이제는 제 자리가 생긴 겁니까?"}]},
+    {"id":"S17","kind":"daughter-pleads","first_frame":null,"prompt":"신부가 울먹이기 직전 아버지에게 손을 뻗는다. 뒤의 하객들을 의식하는 눈동자. 9:16, 6초.","lines":[{"actor":"daughter","text":"아빠, 제발. 다들 보고 있잖아. 여기서 이러지 말고 안으로 들어가자."}]},
+    {"id":"S18","kind":"father-withdraws","first_frame":null,"prompt":"아버지가 신부 손을 피하지 않고 잠시 내려다본 뒤 말한다. 동일한 남색 작업복, 의류 가방. 조용한 표정의 클로즈업. 9:16, 6초.","lines":[{"actor":"father","text":"나도 알아. 그래서 아까 네 말 듣고 조용히 나가려고 했어. 네가 원하는 대로."}]},
+    {"id":"S19","kind":"second-reveal","first_frame":null,"prompt":"아버지가 손에 쥔 휴대전화를 내려다본다. 화면 글씨는 후편집, 생성 영상에는 읽히는 문장 금지. 신부가 그 뒤에서 바라본다. 9:16, 6초.","pause_after":0.4,"lines":[{"actor":"father","text":"일주일 전에는 네가 먼저 전화했잖아. 아빠, 내 결혼식 날 꼭 내 옆에 앉아 줘. 기억 안 나?"}]},
+    {"id":"S20","kind":"silent-regret","first_frame":null,"prompt":"동일한 신부가 아버지의 검정 양복 가방을 보고 말을 잃는다. 눈물보다 미안함과 부끄러움. 아버지는 전경 흐림. 9:16, 6초, 무대사.","hold_sec":5.0,"lines":[]},
+    {"id":"S21","kind":"suit","first_frame":null,"prompt":"아버지가 의류 가방 지퍼를 조금 열어 안의 깨끗한 검정 양복을 보여준다. 신부 손이 움찔하지만 닿지 않는다. 같은 예식장, 손과 소품 인서트. 9:16, 6초.","pause_before":0.3,"lines":[{"actor":"father","text":"밤새 일하고도 온 건 그 말 때문이야. 양복도 가져왔어. 네 옆에 앉으려고."}]},
+    {"id":"S22","kind":"offer","first_frame":null,"prompt":"동일한 신부가 아버지를 향해 손을 뻗고 이제는 사람들 눈을 보지 않는다. 신부 가슴 위 클로즈업. 9:16, 6초.","lines":[{"actor":"daughter","text":"아빠... 미안해. 이제라도 같이 사진 찍자. 내가 잘못했어."}]},
+    {"id":"S23","kind":"refusal","first_frame":"frames/S23.png","prompt":"아버지가 신부가 잡으려는 손에서 천천히 손을 뺀다. 검정 양복 가방을 다른 손에 든다. 같은 신부와 신랑, 과장 없는 슬픔. 9:16, 6초.","pause_before":0.2,"pause_after":0.8,"lines":[{"actor":"father","text":"사진 속에서는 내 딸인데... 여기서는 내가 남이구나."}]},
+    {"id":"S24","kind":"aftermath","first_frame":null,"prompt":"신랑이 아무 말 없이 신부를 바라보고, 신부는 아버지에게 더 다가가지 못한다. 같은 예식장, 2인 반응 미디엄. 9:16, 6초, 무대사.","hold_sec":3.0,"lines":[]},
+    {"id":"S25","kind":"exit","first_frame":"frames/S25.png","prompt":"동일한 남색 작업복 아버지가 검정 양복 가방을 들고 예식장 출입문으로 홀로 걸어간다. 신부와 신랑은 뒤에서 서 있다. 거리감 있는 와이드, 9:16, 6초, 무대사.","hold_sec":4.0,"lines":[]}
+  ]
+}
+
