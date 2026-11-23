@@ -4,6 +4,8 @@
 
 `example/episode.json`의 7샷은 **작동 확인용 일부 장면**이다. 2~3분 완성 대본이나 실제 첫 프레임 PNG가 아니다. 본편은 장면별 대사를 확정한 뒤 20~40개 안팎의 영상 자산으로 제작한다.
 
+첫 본편 후보는 `episodes/001-wedding-father/episode.json`(25장면)이다. 대본은 같은 폴더의 `storyboard.md`, 첫 프레임과 Grok 파일 인계는 `GROK_HANDOFF.md`를 따른다. `plan` 명령이 `shot_prompts.md`를 생성한다.
+
 ## 한 편의 제작 흐름
 
 1. `episode.json`에 인물·대사·반응 컷·장면 설명을 작성한다.
@@ -29,7 +31,7 @@
 - `hold_sec`: 대사가 없는 장면 길이. 대사 장면에서는 최소 전체 길이로 작동한다.
 - `pause_before`, `pause_after`: 해당 장면에서 발화 앞뒤 호흡.
 - `video`: 기본값 `videos/{id}.mp4`.
-- `first_frame`: 기본값 `frames/{id}.png`.
+- `first_frame`: 기본값 `frames/{id}.png`. 이미지 없이 프롬프트만 쓸 장면은 `null`.
 - `music`: 선택적 BGM 경로. `music_db`는 기본 -23.
 - `scene_audio_db`: 원본 Grok 영상의 현장음. 기본 음소거(-100). 대사가 들어 있으면 그대로 쓰지 않는다.
 
